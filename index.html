@@ -121,6 +121,91 @@ input.f:focus,input.s:focus{outline:2px solid var(--accent2);outline-offset:1px}
 .foot .links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .foot a.btn{min-height:38px;padding:4px 16px;font-size:.9rem}
 .foot .em{user-select:all;direction:ltr;unicode-bidi:isolate;color:var(--ink);font-weight:500}
+
+/* ---- ألوان الأقسام */
+.s-quant{--c1:#1f3a93;--c2:#5b7cfa}.s-cmp{--c1:#d6336c;--c2:#ff8fb5}.s-logic{--c1:#5b3fc4;--c2:#9a7bff}
+.s-shape{--c1:#0b6fb8;--c2:#3dbbff}.s-verbal{--c1:#b4175f;--c2:#ff6f9f}.s-read{--c1:#243b6b;--c2:#6a84c8}
+/* ---- بطاقات الحيل */
+.chh .top2{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ring{position:relative;width:64px;height:64px;flex:none}
+.ring svg{width:64px;height:64px;transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:1.05rem}
+.kcount{margin:2px 0 0;color:var(--muted)}.kcount b{color:var(--pink);font-size:1.15rem}
+.chrow{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:12px}
+.phint{display:block;margin-top:6px;color:var(--muted);line-height:1.6}
+.chips.scr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.chips.scr::-webkit-scrollbar{display:none}.chips.scr button{flex:none}
+.fc{perspective:1400px;cursor:pointer;-webkit-tap-highlight-color:transparent;outline:none}
+.fci{display:grid;transition:transform .55s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d;min-height:360px}
+.fc.flip .fci{transform:rotateY(180deg)}
+.fc:focus-visible .front{outline:3px solid var(--pink);outline-offset:3px}
+.face{grid-area:1/1;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:28px;overflow:hidden;min-width:0}
+.front{background:linear-gradient(145deg,var(--c1),var(--c2));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:26px 22px;position:relative;box-shadow:0 16px 36px -16px var(--c1)}
+.front::before,.front::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.13)}
+.front::before{width:200px;height:200px;top:-70px;inset-inline-start:-60px}
+.front::after{width:130px;height:130px;bottom:-45px;inset-inline-end:-35px}
+.front>*{position:relative;z-index:1}
+.front svg{width:92px;height:92px;color:#fff}
+.front h2{font-size:1.65rem;line-height:1.5}
+.chip2{background:rgba(255,255,255,.22);border-radius:999px;padding:2px 14px;font-size:.85rem}
+.tap{font-size:.88rem;opacity:.92;margin-top:4px}
+.gotit{background:#fff;color:var(--c1);font-weight:700;border-radius:999px;padding:2px 14px;font-size:.85rem}
+.back{background:var(--card);border:2px solid var(--c1);transform:rotateY(180deg);display:flex;flex-direction:column}
+.back .bh{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;display:flex;align-items:center;gap:12px;padding:14px 20px}
+.back .bh svg{width:38px;height:38px;flex:none}
+.back .bh h3{font-size:1.15rem}
+.back .bb{padding:16px 20px 20px;font-size:1.02rem}
+.back .bb ul{margin:.3em 0;padding-inline-start:1.2em}
+.dn{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px}
+.rb{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);font-size:1.7rem;line-height:1;display:grid;place-items:center;flex:none}
+.rb:active{transform:scale(.94)}
+.dc{flex:1;text-align:center;color:var(--muted)}.dc b{color:var(--ink);font-size:1.1rem}
+.dact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.dact .btn{padding:10px 12px}
+.dmsg{min-height:30px;text-align:center;color:var(--pink);font-weight:600;margin-top:8px}
+.allg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.kc{border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.kc .kh{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;padding:12px 14px;display:flex;gap:12px;align-items:center}
+.kc .kh svg{width:38px;height:38px;flex:none}
+.kc .kh h3{font-size:1.02rem}.kc .kh small{opacity:.9}
+.kc .kb{padding:12px 14px;flex:1}.kc .kb ul{margin:.3em 0;padding-inline-start:1.2em}
+.kc .kf{padding:0 14px 12px}
+.tb.got{background:var(--ok-bg);color:var(--ok);border-color:var(--ok)}
+/* ---- صفحة أخطائي */
+.alarm{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#0f1226;color:#fff;border-radius:22px;padding:16px 20px;margin-top:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.alarm svg{width:46px;height:46px;color:#ff8fb5;flex:none}
+.alarm.on svg{animation:ringb 1.8s ease-in-out infinite;transform-origin:50% 12%}
+@keyframes ringb{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-14deg)}50%{transform:rotate(7deg)}}
+.digs{display:flex;gap:8px;direction:ltr}
+.dg{width:50px;height:70px;border-radius:12px;background:linear-gradient(#1c2145,#0a0c1d);display:grid;place-items:center;font-size:2.6rem;font-weight:700;color:#ff8fb5;text-shadow:0 0 14px rgba(255,143,181,.75);position:relative;line-height:1}
+.dg::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.65)}
+.alarm .al{flex:1;min-width:160px}.alarm .al b{display:block;font-size:1.1rem}.alarm .al span{color:#b9bdda;font-size:.9rem}
+.adage{margin-top:14px;padding:12px 14px;border-radius:14px;background:var(--soft);border-inline-start:4px solid var(--pink);font-weight:500}
+.cnts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.cnts span{background:var(--soft);border-radius:999px;padding:2px 14px;font-size:.9rem}.cnts b{color:var(--pink)}
+.no{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:50%;background:var(--pink);color:#fff;font-weight:700;font-size:.85rem;margin-inline-end:8px;vertical-align:middle}
+@media (prefers-reduced-motion:reduce){.fci{transition:none}.alarm.on svg{animation:none}}
+/* ---- ورقة المراجعة (طباعة) */
+.psheet{display:none}
+@media print{
+ @page{size:A4;margin:11mm}
+ html,body{background:#fff!important;color:#000!important;font-size:10.5pt!important;line-height:1.55!important}
+ body{background-image:none!important}
+ body::before,.top,.foot,.noprint{display:none!important}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none!important}
+ main{padding:0!important;display:block!important}
+ .psheet{display:block!important}
+ .ph{background:linear-gradient(135deg,#1f3a93,#e8588a);color:#fff;border-radius:12px;padding:12px 16px;margin-bottom:10px}
+ .ph h1{font-size:19pt;color:#fff}
+ .psheet h2{font-size:14pt}.psheet h3{font-size:12pt;color:#1f3a93;margin:8px 0 3px}
+ .psec{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;border-radius:10px;padding:6px 14px;margin:12px 0 6px;break-after:avoid}
+ .psec h2{color:#fff}
+ .pgrp{margin-bottom:8px}
+ .pcards{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:5px 0}
+ .pc{border:1px solid #ccc;border-radius:8px;padding:5px 9px;break-inside:avoid;background:#fff!important}
+ .pc h4{margin:0 0 2px;font-size:10.5pt;color:#c2185b}.pc p,.pc li{margin:1px 0}.pc ul,.pw ul{margin:2px 0;padding-inline-start:1.2em}
+ .pw{font-size:9.5pt;break-inside:avoid}
+ .pfoot{margin-top:12px;text-align:center;color:#555;font-size:9pt}
+ .m{background:#f3f3f3!important;color:#000!important}
+}
 </style>
 </head>
 <body>
@@ -132,9 +217,9 @@ var D=JSON.parse(document.getElementById('data').textContent);
 var SECS=D.secs,SBY={},QBY={},ALL=[],IM=D.imgs,MOCKS=D.mocks||[],QUOTES=D.quotes||[];
 SECS.forEach(function(s){SBY[s.id]=s;s.items.forEach(function(it){it.sec=s.id;QBY[it.id]=it;ALL.push(it)})});
 var LET=['أ','ب','ج','د','هـ'];
-var ST={ans:{},plan:{},dig:'w',theme:'',name:'',days:0,start:'',mk:{}};
+var ST={ans:{},plan:{},dig:'w',theme:'',name:'',days:0,start:'',mk:{},ck:{}};
 var KEY='qd90p';
-try{var r0=localStorage.getItem(KEY)||localStorage.getItem('qd90f');if(r0){var o0=JSON.parse(r0);ST.ans=o0.ans||{};ST.plan=o0.plan||{};ST.dig=o0.dig||'w';ST.theme=o0.theme||'';ST.name=o0.name||'';ST.days=o0.days||0;ST.start=o0.start||'';ST.mk=o0.mk||{};if(!localStorage.getItem(KEY))ST.plan={}}}catch(e){}
+try{var r0=localStorage.getItem(KEY)||localStorage.getItem('qd90f');if(r0){var o0=JSON.parse(r0);ST.ans=o0.ans||{};ST.plan=o0.plan||{};ST.dig=o0.dig||'w';ST.theme=o0.theme||'';ST.name=o0.name||'';ST.days=o0.days||0;ST.start=o0.start||'';ST.mk=o0.mk||{};ST.ck=o0.ck||{};if(!localStorage.getItem(KEY))ST.plan={}}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(ST))}catch(e){}}
 function applyTheme(){var r=document.documentElement;if(ST.theme)r.setAttribute('data-theme',ST.theme);else r.removeAttribute('data-theme')}
 applyTheme();
@@ -153,7 +238,7 @@ function rich(s){var out='',ul=false;String(s).split('\n').forEach(function(L){
  else{if(ul){out+='</ul>';ul=false}out+='<p>'+mk(L)+'</p>'}});
  if(ul)out+='</ul>';return out}
 function img(k){return k&&IM[k]?'<div class="imgw" data-act="zoom"><img alt="" loading="lazy" decoding="async" src="'+IM[k]+'"></div>':''}
-var R={route:'home',mode:{},qs:{},rev:{},mock:null,cheatQ:'',setupDays:7};
+var R={route:'home',mode:{},qs:{},rev:{},mock:null,cheatQ:'',setupDays:7,ch:{sec:'all',i:0,flip:false,mode:'deck',msg:''}};
 function today0(){var d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
 function isQ(it){return it.k!=='p'}
 function gradable(it){return isQ(it)&&(it.a!=null||!it.o)}
@@ -206,7 +291,6 @@ function home(){var t=totalStats(),h='';
  if(!ST.days){h+='<section class="card hero"><h1>أهلاً بك في قدرات ٩٠+</h1><p>تدريب منظم على أسئلة قدرات الجامعيين من ملف «الشامل»، مع شرح لكل إجابة واختبارات تجريبية بوقت.</p></section>'+setupCard()}
  else{var di=dayIdx(),N=ST.days,shown=Math.min(Math.max(di+1,1),N);
   h+='<section class="card hero"><h1>'+esc(greet())+'</h1><div class="quote"><b>حكمة اليوم:</b> '+esc(quoteFor(di))+'</div><div class="row"><div><div class="big">'+shown+'/'+N+'</div><small>أيام الخطة</small></div><div><div class="big">'+pct(t.ok,t.a)+'%</div><small>دقتك ('+t.ok+' من '+t.a+')</small></div><div><div class="big">'+t.n+'</div><small>سؤال من الشامل</small></div></div><div class="seg"><a class="btn" href="#plan">خطة اليوم</a></div></section>'}
- h+='<section class="card"><h2>القاعدة الذهبية</h2><div class="mn">'+esc(D.mn)+'</div><p style="text-align:center;color:var(--muted)">'+esc(D.mnw)+'</p></section>';
  h+='<section class="sec"><h2 style="margin-bottom:10px">الأقسام</h2><div class="grid">'+SECS.map(function(s){var t=secStats(s.id);return '<a class="card tile" href="#'+s.id+'"><span class="n">'+s.n+'</span><h3>'+s.name+'</h3><small style="color:var(--muted)">'+esc(s.sub)+'</small><span class="chip" style="width:fit-content">'+t.n+' سؤال</span><div class="prog"><i style="width:'+pct(t.a,t.g)+'%"></i></div><small style="color:var(--muted)">أجبت '+t.a+' · صحيح '+t.ok+'</small></a>'}).join('')+'</div></section>';
  h+='<section class="card sec"><h2>الاختبارات التجريبية</h2><p>١٠ اختبارات بأسئلة مختلفة تماماً، كل واحد يحاكي الاختبار الحقيقي بوقت وعدد أسئلة وتوزيع على الأقسام.</p><div><a class="btn" href="#mock">ابدأ اختباراً</a></div></section>';
  h+='<section class="card sec"><h2>ماذا يريد الكاتب أن يختبر؟</h2><p>الاختبار اختبار <strong>سرعة وانتباه وملاحظة حيلة</strong>. وتتكرر الأنماط بشكل لافت في الملف:</p><div class="grid" style="margin-top:8px">'+D.patterns.map(function(p){return '<div><h3>'+esc(p[0])+'</h3><p>'+mk(p[1])+'</p></div>'}).join('')+'</div></section>';
@@ -294,16 +378,47 @@ function qaPage(s){var st=R.qs[s.id]||(R.qs[s.id]={p:0,f:'all'}),P=pagesOf(s,st)
  h+='<section class="card">'+nav()+'</section>';return h}
 function secPage(id){var s=SBY[id],m=R.mode[id]||'learn',t=secStats(id);
  return '<section class="card"><div class="nav2"><h2>'+s.n+'. '+s.name+'</h2><span class="chip">'+t.n+' سؤال · أجبت '+t.a+' · صحيح '+t.ok+'</span></div><p style="color:var(--muted)">'+esc(s.pages)+'. الأسئلة منقولة من «الشامل» كما هي، والجواب هو المظلل فيه، ومعه شرح يوضح لماذا هو الصحيح.</p><div class="seg" style="margin-top:8px"><button data-act="mode" data-v="learn" class="'+(m==='learn'?'on':'')+'">الشرح</button><button data-act="mode" data-v="qs" class="'+(m==='qs'?'on':'')+'">أسئلة الملف</button></div></section>'+(m==='learn'?learn(s):qaPage(s))}
-function cheat(){var h='<section class="card"><h2>ورقة الحيل الكاملة</h2><p>كل بطاقات الشرح في مكان واحد.</p><input class="s" id="cs" placeholder="ابحث: مربع، نسبة، سرعة…" value="'+esc(R.cheatQ)+'"></section>';
- var q=R.cheatQ.trim();
- SECS.forEach(function(s){var cs=[];s.learn.forEach(function(g){g.cards.forEach(function(c){if(!q||(c[0]+c[1]).indexOf(q)>=0)cs.push(c)})});
-  if(!cs.length)return;
-  h+='<section class="card sec"><h2>'+s.n+'. '+s.name+'</h2><div class="grid">'+cs.map(function(c){return '<article><h3>'+esc(c[0])+'</h3>'+rich(c[1])+'</article>'}).join('')+'</div></section>'});
- return h}
-function review(){var bad=ALL.filter(function(q){var r=ST.ans[q.id];return r&&!r.ok&&isQ(q)});
- var h='<section class="card"><h2>أخطائي</h2><p>'+(bad.length?'لديك '+bad.length+' سؤالاً أخطأت فيه. أعد حلّ كل سؤال بعد يوم وبعد ثلاثة أيام.':'لا أخطاء مسجلة بعد. ابدأ بأسئلة الملف.')+'</p></section>';
+// ---------- بطاقات الحيل (فلاش كارد) + ورقة المراجعة للطباعة
+var ICON={
+quant:'<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="5" width="40" height="54" rx="9" fill="none" stroke="currentColor" stroke-width="3.5"/><rect x="19" y="12" width="26" height="12" rx="3" fill="currentColor"/><g fill="currentColor"><circle cx="22" cy="35" r="3.4"/><circle cx="32" cy="35" r="3.4"/><circle cx="42" cy="35" r="3.4"/><circle cx="22" cy="46" r="3.4"/><circle cx="32" cy="46" r="3.4"/><circle cx="42" cy="46" r="3.4"/></g></svg>',
+cmp:'<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8v44M20 56h24M10 18h44"/><path d="M10 18 3 36h14zM54 18l-7 18h14z"/></g><circle cx="32" cy="8" r="3.5" fill="currentColor"/></svg>',
+logic:'<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6a17 17 0 0 0-9.5 31c2 1.6 3 3.4 3 6.5h13c0-3 1-4.900 3-6.500A17 17 0 0 0 32 6z"/><path d="M26 50h12M28.5 57h7"/></g><path d="M26 22a8 8 0 0 1 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>',
+shape:'<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"><polygon points="12,28 27,5 42,28"/><circle cx="46" cy="44" r="13"/><rect x="6" y="36" width="24" height="22" rx="4"/></g></svg>',
+verbal:'<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9h46a5 5 0 0 1 5 5v26a5 5 0 0 1-5 5H30L17 57V45H9a5 5 0 0 1-5-5V14a5 5 0 0 1 5-5z"/><path d="M16 21h32M16 31h22"/></g></svg>',
+read:'<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="5" width="44" height="54" rx="7" fill="none" stroke="currentColor" stroke-width="3.5"/><g fill="currentColor"><rect x="18" y="38" width="7" height="14" rx="2"/><rect x="29" y="28" width="7" height="24" rx="2"/><rect x="40" y="18" width="7" height="34" rx="2"/></g></svg>'};
+var OKMSG=['ما شاء الله عليك! حيلة زادت في رصيدك.','ممتاز، كذا تمشي للـ٩٠+.','ثبّتّها، كمّل على بركة الله.','قوي! الحيلة هذي توفّر عليك وقت في الاختبار.','أحسنت، بطاقة وراها بطاقة.'];
+var NOMSG=['تمام، نرجع لها بعدين. المهم ما تستسلم.','لا تشيل هم، التكرار هو اللي يثبّت.','خلّها في بالك وبتصير سهلة.'];
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+function cheatAll(){var L=[];SECS.forEach(function(s){s.learn.forEach(function(g){g.cards.forEach(function(c){L.push({sec:s.id,sn:s.name,g:g.name,t:c[0],b:c[1],k:s.id+'|'+c[0]})})})});return L}
+function cheatList(){var q=R.cheatQ.trim(),sel=R.ch.sec;return cheatAll().filter(function(c){return (sel==='all'||c.sec===sel)&&(!q||(c.t+c.b).indexOf(q)>=0)})}
+function ringSvg(p){var c=2*Math.PI*26;return '<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--pink)" stroke-width="7" stroke-linecap="round" stroke-dasharray="'+(c*p/100).toFixed(1)+' '+c.toFixed(1)+'"/></svg>'}
+function psheet(){var h='<section class="psheet"><div class="ph"><h1>ورقة مراجعة قدرات ٩٠+</h1><div>الحيل والقواعد وكل ما يختبره الكاتب'+(ST.name?' · '+esc(ST.name):'')+'</div></div>';
+ SECS.forEach(function(s){h+='<div class="psec s-'+s.id+'"><h2>'+s.n+'. '+esc(s.name)+'</h2></div>';
+  s.learn.forEach(function(g){h+='<div class="pgrp"><h3>'+esc(g.name)+'</h3><p><b>ماذا يختبر؟</b> '+mk(g.tests)+'</p><div class="pw"><b>كيف يكتب الكاتب أسئلته:</b><ul>'+g.writer.map(function(w){return '<li>'+mk(w)+'</li>'}).join('')+'</ul></div><div class="pcards">'+g.cards.map(function(c){return '<div class="pc"><h4>'+esc(c[0])+'</h4>'+rich(c[1])+'</div>'}).join('')+'</div><div class="pw"><b>أخطاء تتكرر:</b><ul>'+g.traps.map(function(w){return '<li>'+mk(w)+'</li>'}).join('')+'</ul></div></div>'})});
+ if(D.strategy)h+='<div class="psec s-quant"><h2>كيف تصل إلى ٩٠٪ فأكثر؟</h2></div><div class="pcards">'+D.strategy.map(function(p){return '<div class="pc"><h4>'+esc(p[0])+'</h4><p>'+mk(p[1])+'</p></div>'}).join('')+'</div>';
+ return h+'<div class="pfoot">المدينة المنورة – المملكة العربية السعودية · lamaaljohani88@gmail.com</div></section>'}
+function cheat(){var C=R.ch,L=cheatList(),all=cheatAll(),kn=all.filter(function(c){return ST.ck[c.k]}).length,p=pct(kn,all.length);
+ if(C.i>=L.length)C.i=0;
+ var h='<section class="card chh noprint"><div class="top2"><div><h2>بطاقات الحيل</h2><div class="kcount">عرفت <b>'+kn+'</b> من '+all.length+(kn===all.length?' · ما شاء الله، ختمتها كلها!':'')+'</div></div><div class="ring" title="بطاقات عرفتها">'+ringSvg(p)+'<b>'+p+'%</b></div></div>';
+ h+='<div class="chrow"><button class="btn pink" data-act="print">اطبع ورقة المراجعة PDF</button><div class="chips"><button data-act="cmode" data-v="deck" class="'+(C.mode==='deck'?'on':'')+'">بطاقات</button><button data-act="cmode" data-v="all" class="'+(C.mode==='all'?'on':'')+'">عرض الكل</button></div></div><small class="phint">تُطبع كل الحيل وكل المعلومات كورقة مراجعة. من نافذة الطباعة اختر «حفظ كملف PDF».</small>';
+ h+='<div class="chips scr" style="margin-top:12px"><button data-act="csec" data-v="all" class="'+(C.sec==='all'?'on':'')+'">الكل</button>'+SECS.map(function(s){return '<button data-act="csec" data-v="'+s.id+'" class="'+(C.sec===s.id?'on':'')+'">'+esc(s.name)+'</button>'}).join('')+'</div>';
+ h+='<input class="s" id="cs" style="margin-top:10px" placeholder="ابحث: مربع، نسبة، سرعة…" value="'+esc(R.cheatQ)+'"></section>';
+ if(!L.length)h+='<section class="card noprint"><p>ما لقيت بطاقة بهذا البحث.</p></section>';
+ else if(C.mode==='deck'){var c=L[C.i],g=ST.ck[c.k];
+  h+='<section class="deck noprint"><div class="fc s-'+c.sec+(C.flip?' flip':'')+'" data-act="cflip" role="button" tabindex="0" aria-label="اقلب البطاقة"><div class="fci"><div class="face front">'+ICON[c.sec]+'<span class="chip2">'+esc(c.sn)+' · '+esc(c.g)+'</span><h2>'+esc(c.t)+'</h2><div class="tap">اضغط على البطاقة لتشوف الحيلة</div>'+(g?'<div class="gotit">عرفتها ✓</div>':'')+'</div><div class="face back"><div class="bh">'+ICON[c.sec]+'<h3>'+esc(c.t)+'</h3></div><div class="bb">'+rich(c.b)+'</div></div></div></div>';
+  h+='<div class="dn"><button class="rb" data-act="cprev" aria-label="السابقة">›</button><div class="dc"><b>'+(C.i+1)+'</b> / '+L.length+'<div class="prog" style="margin-top:6px"><i style="width:'+pct(C.i+1,L.length)+'%"></i></div></div><button class="rb" data-act="cnext" aria-label="التالية">‹</button></div>';
+  h+='<div class="dact"><button class="btn alt" data-act="cunk">أراجعها لاحقاً</button><button class="btn" data-act="cknow">عرفتها ✓</button></div><div class="dmsg" aria-live="polite">'+esc(C.msg||'')+'</div></section>'}
+ else{h+='<section class="allg noprint">'+L.map(function(c,i){var g=ST.ck[c.k];return '<article class="kc s-'+c.sec+'"><div class="kh">'+ICON[c.sec]+'<div><h3>'+esc(c.t)+'</h3><small>'+esc(c.sn)+' · '+esc(c.g)+'</small></div></div><div class="kb">'+rich(c.b)+'</div><div class="kf"><button class="tb'+(g?' got':'')+'" data-act="ctog" data-k="'+esc(c.k)+'">'+(g?'عرفتها ✓':'علّمها كمعروفة')+'</button></div></article>'}).join('')+'</section>'}
+ return h+psheet()}
+// ---------- صفحة أخطائي
+function review(){var bad=ALL.filter(function(q){var r=ST.ans[q.id];return r&&!r.ok&&isQ(q)}),n=bad.length,no=0;
+ var ds=String(n).length<3?('000'+n).slice(-3):String(n);
+ var h='<section class="card"><h2>أخطائي</h2><div class="alarm'+(n?' on':'')+'"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 7c-10 0-17 7.500-17 17v10l-6 9h46l-6-9V24c0-9.500-7-17-17-17z"/><path d="M26 49a6 6 0 0 0 12 0"/></g></svg><div class="digs" aria-label="عدد الأخطاء '+n+'">'+ds.split('').map(function(d){return '<div class="dg">'+d+'</div>'}).join('')+'</div><div class="al"><b>'+(n?'خطأ ينتظر مراجعتك':'ما عندك أخطاء مسجلة')+'</b><span>'+(n?'كل ما صححت واحد، ينقص العدّاد.':'أي خطأ يجي في أسئلة الملف أو الاختبارات يظهر هنا تلقائياً.')+'</span></div></div>';
+ h+='<p class="adage">ما يعلّمك الصح إلا الخطأ، والاستفادة منه. أخطاؤك فرصة تتعلّم فيها: تلقط نقاط ضعفك وتقوّيها، وما تكرّر نفس الغلطة في الاختبار.</p>';
+ if(n){h+='<div class="cnts">'+SECS.map(function(s){var k=bad.filter(function(q){return q.sec===s.id}).length;return k?'<span>'+esc(s.name)+' <b>'+k+'</b></span>':''}).join('')+'</div><p style="margin-top:10px">أعد حلّ كل سؤال بعد يوم وبعد ثلاثة أيام.</p>'}
+ h+='</section>';
  SECS.forEach(function(s){var L=bad.filter(function(q){return q.sec===s.id});if(!L.length)return;
-  h+='<section class="card sec"><h3>'+s.name+' · '+L.length+'</h3>'+L.map(function(q){return '<details class="cd" style="margin:8px 0"><summary>'+mk((q.q.split('\n')[0]||'').slice(0,80))+'</summary>'+(q.pf?img(q.pf):'')+qCard(q)+'<button class="tb" data-act="retry" data-q="'+q.id+'" style="margin-top:8px">أعد المحاولة</button></details>'}).join('')+'</section>'});return h}
+  h+='<section class="card sec"><h3>'+s.name+' · '+L.length+'</h3>'+L.map(function(q){no++;return '<details class="cd" style="margin:8px 0"><summary><span class="no">'+no+'</span>'+mk((q.q.split('\n')[0]||'').slice(0,80))+'</summary>'+(q.pf?img(q.pf):'')+qCard(q)+'<button class="tb" data-act="retry" data-q="'+q.id+'" style="margin-top:8px">أعد المحاولة</button></details>'}).join('')+'</section>'});return h}
 // ---- الاختبارات التجريبية (١٠ اختبارات ثابتة بلا تكرار)
 var timerH=null,SPQ=62;
 function fmt(s){var m=Math.floor(s/60),x=s%60;return m+':'+(x<10?'0':'')+x}
@@ -337,7 +452,7 @@ function render(){var ro=R.route,h='';
  if(keep){var e=document.getElementById('cs');e.focus();e.setSelectionRange(e.value.length,e.value.length)}}
 function route(){var t=location.hash.replace('#','');R.route=t||'home';render();window.scrollTo(0,0)}
 window.addEventListener('hashchange',route);
-document.addEventListener('input',function(e){if(e.target.id==='cs'){R.cheatQ=e.target.value;render()}});
+document.addEventListener('input',function(e){if(e.target.id==='cs'){R.cheatQ=e.target.value;R.ch.i=0;R.ch.flip=false;render()}});
 document.addEventListener('change',function(e){var t=e.target;if(t.dataset&&t.dataset.act==='jump'){var st=R.qs[R.route];st.p=+t.value;render();window.scrollTo(0,0)}});
 function pageOfIndex(id,idx){var P=pagesOf(SBY[id],{p:0,f:'all'}),c=0;for(var i=0;i<P.length;i++){c+=P[i].n;if(idx<c)return i}return Math.max(0,P.length-1)}
 function startMock(n){var m=MOCKS[n-1];if(!m)return;var l=m.ids.map(function(id){return QBY[id]}).filter(Boolean);
@@ -371,6 +486,16 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-act]
  else if(a==='mconfirm'){R.mock.confirm=true;render()}
  else if(a==='mcancel'){R.mock.confirm=false;render()}
  else if(a==='mfinish'){finishMock();window.scrollTo(0,0)}
+ else if(a==='cflip'){R.ch.flip=!R.ch.flip;var fc=document.querySelector('.fc');if(fc)fc.classList.toggle('flip',R.ch.flip)}
+ else if(a==='cnext'||a==='cprev'){var CL=cheatList();if(CL.length)R.ch.i=(R.ch.i+(a==='cnext'?1:-1)+CL.length)%CL.length;R.ch.flip=false;R.ch.msg='';render()}
+ else if(a==='cknow'||a==='cunk'){var CL2=cheatList();if(CL2.length){var cc=CL2[R.ch.i];if(a==='cknow')ST.ck[cc.k]=1;else delete ST.ck[cc.k];save();
+   var left=CL2.filter(function(x){return !ST.ck[x.k]}).length;
+   R.ch.msg=(a==='cknow'&&!left)?'خلّصت كل بطاقات هذا الاختيار، ما شاء الله عليك!':pick(a==='cknow'?OKMSG:NOMSG);
+   R.ch.i=(R.ch.i+1)%CL2.length;R.ch.flip=false;render()}}
+ else if(a==='csec'){R.ch.sec=b.dataset.v;R.ch.i=0;R.ch.flip=false;R.ch.msg='';render()}
+ else if(a==='cmode'){R.ch.mode=b.dataset.v;render()}
+ else if(a==='ctog'){var kk=b.dataset.k;if(ST.ck[kk])delete ST.ck[kk];else ST.ck[kk]=1;save();render()}
+ else if(a==='print'){try{window.print()}catch(x){}}
  else if(a==='copy'){var v=b.dataset.v;try{navigator.clipboard.writeText(v).then(function(){b.textContent='تم النسخ'},function(){b.textContent=v})}catch(x){b.textContent=v}}});
 route();
 })();
